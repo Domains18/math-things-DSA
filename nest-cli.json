@@ -1,22 +1,22 @@
 {
   "$schema": "https://json.schemastore.org/nest-cli",
   "collection": "@nestjs/schematics",
-  "sourceRoot": "apps/nestjs-grpc/src",
+  "sourceRoot": "apps/apigateway/src",
   "compilerOptions": {
     "deleteOutDir": true,
     "webpack": true,
-    "tsConfigPath": "apps/nestjs-grpc/tsconfig.app.json"
+    "tsConfigPath": "apps/apigateway/tsconfig.app.json"
   },
   "monorepo": true,
-  "root": "apps/nestjs-grpc",
+  "root": "apps/apigateway",
   "projects": {
-    "nestjs-grpc": {
+    "apigateway": {
       "type": "application",
-      "root": "apps/nestjs-grpc",
+      "root": "apps/apigateway",
       "entryFile": "main",
-      "sourceRoot": "apps/nestjs-grpc/src",
+      "sourceRoot": "apps/apigateway/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/nestjs-grpc/tsconfig.app.json"
+        "tsConfigPath": "apps/apigateway/tsconfig.app.json"
       }
     },
     "auth": {
