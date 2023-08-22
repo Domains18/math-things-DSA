@@ -21,6 +21,7 @@ message updateUserDto{
     SocialMedia socialMedia = 6;
 }
 
+
 message findUserDto{
     string id = 1;
 }
