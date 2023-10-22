@@ -8,8 +8,12 @@
   },
   "keywords": [],
   "author": "",
+<<<<<<< HEAD
   "license": "ISC",
   "workspaces": [
     "packages/protos"
   ]
+=======
+  "license": "ISC"
+>>>>>>> dd921f23a7d499c3e29e9550dc707ceb58963221
 }
