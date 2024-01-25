@@ -1,7 +1,7 @@
-import { NextFunction, Request, Response } from "express";
+import {Response } from "express";
 import axios from "axios";
 
-export async function generateToken(req: Request, res: Response,next: NextFunction) {
+export async function generateToken() {
   try {
     let consumerKey: string | undefined = process.env.CONSUMER_KEY;
     let secretKey: string | undefined = process.env.SECRET_KEY;
@@ -14,6 +14,5 @@ export async function generateToken(req: Request, res: Response,next: NextFuncti
     });
   } catch (error) {
     console.error(error);
-    return res.status(400).json({ error: error });
   }
 }
