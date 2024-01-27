@@ -39,5 +39,7 @@ export async function generateStkPush(payload: sophia) {
         authorization: `Bearer ${token}`,
       },
     }
-  );
+  ).then((data: any) => {
+      
+  })
 }
